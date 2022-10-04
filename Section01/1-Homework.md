@@ -28,20 +28,18 @@
    > **Important**: Remember to use the [Savvy Starter Repo Template](https://github.com/savvy-coders/savvy-starter) for this!
    > <br>
 
-3. Create a docs folder, add all your project documentation in the form of markdown, images or PDFs. (It could be useful to create a separate **pictures** folder to collect images for your website)
+3. Create a docs  in your repo, add all your project documentation in the form of Markdown, excel, doc, or PDF files. (It could be useful to create a separate folders for different resources you'd like to use for your capstone)
+
    <br>
 
-4. Update your README.md file -- using Markdown code -- to link to your new project documentation, and do a writeup of your project.
+4. Update your Capstone README.md file -- using Markdown code -- to link to your new project documentation, and do a writeup of your project.
+
    <br>
 
 5. Your documentation should include...
    - [SWOT Analysis - Project Planning](https://docs.google.com/document/d/1AS_I6aDUy3FHavmheb-jS2qiLrm1xrmr6Q1uVHQKaGI/edit?usp=sharing)
    - Definition of your audience
-   - Definition statement (I want to create a web application that...) for your project
+   - Definition statement (I want to create a data analysis of ...) for your capstone project
    - High level story (elevator pitch)
-   - Outline of the content
-   - User Flow
-   - Wireframes (1 wireframe per page minimum, hand-drawn is ok!)
-   - Color pallet
-   - Site navigation and Nav elements like buttons
-   - Any third party APIs that will be used
+   - Outline of the content -- what question do I want to answer
+   - Possible sources where you can get datasets for your project
