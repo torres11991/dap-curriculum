@@ -47,7 +47,7 @@
 
 ### P
 
-- Python Resources
+- [Python Resources](#python-resources)
 
 ### R
 
@@ -247,6 +247,8 @@ Code, create, and learn together by using the free, collaborative, in-browser Re
 The best place to build, test, and discover front-end code.
 CodePen.io is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.
 
+### **[]()**
+
 <br>
 
 ---
@@ -285,6 +287,16 @@ Create a profile for yourself and select your areas of interest
 - [www.launchcode.org/coder_girl](www.launchcode.org/coder_girl)
 - [www.launchcode.org](www.launchcode.org)
 - [www.codecademy.com](www.codecademy.com)
+
+<br>
+
+---
+
+<br>
+
+## Python Resources
+
+- [How to add Python to Windows PATH](https://datatofish.com/add-python-to-windows-path/)
 
 <br>
 
