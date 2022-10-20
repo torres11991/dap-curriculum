@@ -312,7 +312,7 @@ So far we have been content using the computer friendly id columns to work throu
 
 Let's take a look at a better way of working with query results.
 
-## Welcome to joins 
+## Welcome to inner joins 
 
 ``` sql
 
@@ -363,3 +363,180 @@ select s.StudentName as "Student Name"
 		;
 
 ```
+
+---
+
+# Review
+
+The last query looks pretty good, right? Easy to read, has just what makes sense to the humans. But what if we want all students regardless of enrollment in a class?
+
+## Welcome to left joins
+
+``` sql
+
+select s.StudentName as "Student Name"
+	,c.SubjectName as "Class"
+	,g.Grade as 'Result'
+	from Students s
+		left join Grades g
+			on s.StudentId = g.StudentId
+		left join Subjects C --classes
+			on g.SubjectId = c.SubjectId
+		;
+
+
+```
+
+---
+
+# What about RIGHT joins?
+
+## Just don't
+- Your future self will never forgive you if you right a query with both left and right joins
+- I almost never see right joins in the wild
+- Technical Debt is real - some say code is a liability. 
+- Venn Diagrams.
+
+https://www.w3schools.com/sql/sql_join.asp
+
+---
+
+# Filtering - Using the Where Clause
+
+## Like - pattern matching
+
+``` sql
+
+select StudentName 
+	from Students s
+	where s.StudentName like 'm%';
+
+select StudentName 
+	from Students s
+	where s.StudentName like '%n';
+
+
+```
+
+https://www.w3schools.com/sql/sql_select.asp
+https://sqlite.org/lang_select.html
+
+---
+
+# SQLite GLOB
+
+I doubt anyone will need this - and it is only implemented in SQLite:
+
+``` sql
+
+SELECT 1 where 'Mariah' GLOB 'm%';
+
+SELECT 1 where 'Mariah' LIKE 'm%';
+
+
+```
+
+GLOB is case sensitive and uses Unix style wildcards.
+
+---
+
+# Using Where ... And
+
+``` sql
+
+select s.StudentName
+	,s.StudentId
+	from Students s
+		where s.StudentID > 5
+			and s.StudentName like 'm%';
+			
+```
+
+---
+
+# Using Where ... Or
+
+``` sql
+
+select s.StudentName
+	,s.StudentId
+	from Students s
+		where s.StudentID > 5
+			or s.StudentName like 'm%'
+
+```
+
+---
+
+# Use parenthesis in your where clauses
+
+
+``` sql
+
+select s.StudentName
+	,s.StudentId
+	from Students s
+		where s.StudentID > 5
+			and s.StudentName like 'm%'
+			or s.StudentName like 'n%'
+			
+```
+ 
+ Might not be what you are looking for...
+
+``` sql 
+
+
+select s.StudentName
+	,s.StudentId
+	from Students s
+		where s.StudentID > 5
+			and (s.StudentName like 'm%'
+			or s.StudentName like 's%');
+
+```
+
+---
+
+# Filtering based on a range of values
+
+``` sql 
+
+select s.StudentName as "Student Name"
+	,c.SubjectName as "Class"
+	,g.Grade as 'Result'
+	from Grades g
+		inner join Students s
+			on g.StudentId = s.StudentId
+		inner join Subjects C --classes
+			on g.SubjectId = c.SubjectId
+	where g.Grade between 80 and 90;
+
+```
+
+Most MS SQL Server coders frown on this practice because the boundaries are included.
+
+---
+
+# Try this instead
+
+``` sql 
+
+select s.StudentName as "Student Name"
+	,c.SubjectName as "Class"
+	,g.Grade as 'Result'
+	from Grades g
+		inner join Students s
+			on g.StudentId = s.StudentId
+		inner join Subjects C --classes
+			on g.SubjectId = c.SubjectId
+	where g.Grade >= 80 
+		and g.Grade <= 90;
+
+```
+
+This code is more easily read and understood - your future self will thank you. 
+
+---
+
+# Pickup at slide 28
