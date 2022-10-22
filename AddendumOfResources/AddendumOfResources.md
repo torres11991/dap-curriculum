@@ -133,6 +133,8 @@ Here are some E-books and a list of 'old fashioned' physical books to read.
 
 ### Physical Books
 
+- Matthew Parker - Humble PI
+
 <br>
 
 ---
