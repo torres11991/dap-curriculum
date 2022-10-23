@@ -48,8 +48,9 @@ Additional practice to do
 •	Insert 4 columns after Overtime hours
 •	Enter in hours worked into the new columns
 •	Enter in Overtime hours into the new columns
-•	ABSOLUTE add $ after = (tells any new cells to always reference c4) 
-•	ABSOLUTE for overtime
+•	ABSOLUTE value: Add $ signs before values to fix the formula calculations 
+o	($c$4 tells any new cells to always reference c4) 
+•	Add ABSOLUTE calculations for overtime
 •	Color each section a different color
 •	Do the totals for the month
 •	Calculate a whole month’s worth of Pay totals

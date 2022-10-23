@@ -20,6 +20,7 @@
 
 - [Database resources](#database-resources)
 - [DEV Tools](#dev-tools)
+- [Datasets for public use](#public_datasets)
 
 ### F
 
@@ -186,14 +187,17 @@ Here are some E-books and a list of 'old fashioned' physical books to read.
 
 ### SQl - Sequel Query Language
 
-<br>
-
-### **SQL Database**
-
 - [Simple SQL Queries - I](https://github.com/bahull/simple-sql-queries)
 - [Simple SQL Queries - II](https://github.com/bahull/simple-sql-queries-afternoon)
 - [Intermediate SQL Queries - I](https://github.com/bahull/intermediate-sql-queries)
 - [Intermediate SQL Queries - II](https://github.com/bahull/intermediate-sql-queries-afternoon)
+
+<br>
+
+### **SQL Database**
+
+What exactly is a database? This quick tutorial will explain how Relational Database Management Systems work. You'll learn a brief history of databases. And even how to write some of your own SQL queries. (20 minute read): https://www.freecodecamp.org/news/dbms-and-sql-basics/
+
 - [PostgreSQL relational-DB](AddendumOfResources/Relational-DB-Postgres/Relational-DB-Postgres.md)
 
 ### **Non-SQL / JSON / Document Databases**
@@ -214,6 +218,17 @@ Here are some E-books and a list of 'old fashioned' physical books to read.
 ## DEV Tools
 
 - [Learn How to Use the Chrome DevTools to Troubleshoot Websites](https://www.freecodecamp.org/news/learn-how-to-use-the-chrome-devtools-to-troubleshoot-websites/)
+
+<br>
+
+## Public datasets
+
+Here are a few resources to find datasets:
+- https://community.tableau.com/s/question/0D54T00000G557ESAR/data-sets
+- https://www.kaggle.com/datasets
+- http://statweb.stanford.edu/~sabatti/data.html
+- https://opendatainception.io/
+- https://www.stats.govt.nz/large-datasets/csv-files-for-download/
 
 <br>
 
