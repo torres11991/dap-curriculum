@@ -223,18 +223,13 @@ There would be many more records to enter here but I think everyone is ready to 
 
 ---
 
-# Break
+# Somethings to ponder
 
-## Some questions to think about:
 1. Where are the relationships?
 2. Can you think of a reason why I am about to use the word, "Intersection"
 3. Why doesn't the Grades table have a primary key
 	1. What makes this table special?
 	2. Could / Should it have a primary key
-
----
-
-# Welcome Back
 
 ---
 
@@ -384,7 +379,6 @@ select s.StudentName as "Student Name"
 			on g.SubjectId = c.SubjectId
 		;
 
-
 ```
 
 ---
@@ -396,8 +390,23 @@ select s.StudentName as "Student Name"
 - I almost never see right joins in the wild
 - Technical Debt is real - some say code is a liability. 
 - Venn Diagrams.
+- Fun fact - SQLite does not support Right Joins.
 
 https://www.w3schools.com/sql/sql_join.asp
+
+The ANSI standard for SQL calls a left join a left outer join. If you see it documented like this just know that the interpreters that I have worked with all accept both syntaxes. 
+
+
+---
+
+# Full Outer Join
+
+SQLite also does not support this join type so unless you decide to use a different engine then you will not be able to experiment with this. 
+
+A full outer join returns all of the data from both tables. 
+
+There is a way to emulate this if you need it: 
+- https://en.wikipedia.org/wiki/Join_%28SQL%29#Full_outer_join
 
 ---
 
@@ -484,6 +493,10 @@ select s.StudentName
  
  Might not be what you are looking for...
 
+---
+
+Maybe these are the students you are looking for:
+
 ``` sql 
 
 
@@ -539,4 +552,200 @@ This code is more easily read and understood - your future self will thank you.
 
 ---
 
-# Pickup at slide 28
+# Cherry Picking records with Where ... In
+
+``` sql
+
+select * 
+	from Students s
+	where s.StudentId in (3,5,7,9)
+	
+```
+
+---
+
+# Where exists
+
+``` sql 
+
+select * 
+	from Students s
+	where exists (
+		select 1 
+			from Grades g 
+			where s.StudentId = g.StudentId 
+			);
+
+```
+
+Notice the "1" - why do you think I wrote the query this way?
+This is a bit convoluted - using a join for this is far more efficient 
+
+---
+
+# Inner Join instead of where ... exisits
+
+``` sql
+
+select distinct s.* 
+	from Students s
+	inner join Grades g
+		on s.StudentId = g.StudentId;
+
+```
+
+Let's discuss "distinct"
+
+---
+
+# Using NOT
+
+- NOT BETWEEN 10 and 20 
+	- returns all of the rows outside of the range 
+- NOT LIKE  'a%'
+	- returns all of the rows where the selected column starts with something other than 'a'
+- NOT EXISTS
+	- Returns all of the rows where a matching record is not found
+
+---
+
+# Where not exists
+
+## Let's say we need to know how many inactive students we have:
+
+``` sql 
+
+select * 
+	from Students s
+	where not exists (
+		select 1 
+			from Grades g 
+			where s.StudentId = g.StudentId 
+			);
+
+```
+
+This is my primary use for NOT and Exists - this pattern can be used to insert only records that I have not already inserted. 
+
+---
+
+# Sorting Data
+
+## It is time for graduation and we need to call our students alphabetically
+
+``` sql 
+
+select s.StudentName
+	from Students s
+	order by s.StudentName
+
+```
+
+---
+
+# But that was all students - we just need those attending classes.
+
+``` sql
+
+SELECT DISTINCT s.StudentName
+	FROM Students s
+		INNER JOIN Grades g
+			ON s.StudentId = g.StudentId
+	ORDER BY s.StudentName
+
+```
+
+Notice the use of distinct again. 
+Could be done with where exists.
+
+# Let's announce the students in order by grade
+
+``` sql 
+
+SELECT s.StudentName
+	,avg(g.grade) AS GPA 
+	FROM Students s
+		INNER JOIN Grades g
+			ON s.StudentId = g.StudentId
+	GROUP BY s.StudentName
+	ORDER BY avg(g.grade) desc
+
+```
+
+---
+
+# Let's review a bit
+
+When you mix columns with aggregate functions like AVG() all none aggregated columns must be in the GROUP BY clause.
+Where Excel has functions that operate on a cell SQL has functions that operate on all of the columns in a result set. 
+
+## Questions?
+
+---
+
+# SQLite Aggregate Function List
+
+- AVG( )
+- COUNT( )
+- MAX( )
+- MIN( )
+- SUM( )
+
+---
+
+# This aggregate function warrants an explanation
+
+## GROUP_CONCAT(expression, separator)
+
+``` sql 
+
+SELECT GROUP_CONCAT(studentname, '-') FROM Students
+
+```
+
+Can you think of where you might use something like this?
+
+---
+
+# How about in a list of class that the student is enrolled in?
+
+``` sql 
+
+SELECT s.StudentName
+	,GROUP_CONCAT(c.SubjectName,' - ')
+	FROM Students s
+		INNER JOIN Grades g 
+			ON s.StudentId = g.StudentId
+		INNER JOIN Subjects c 
+			ON g.SubjectId = c.SubjectId
+	GROUP BY s.StudentName
+
+
+```
+
+---
+
+# Setting Limits
+
+When working with really large datasets it can be VERY helpful to tell SQL to return only a portion of the result set. 
+
+``` sql
+
+--Just give me the first 5 rows
+SELECT * 
+	FROM Students LIMIT 5;
+
+--Just give me the second five rows
+SELECT * 
+	FROM Students LIMIT 5,5;
+
+--Rows after the first three
+SELECT * 
+	FROM Students LIMIT 5 OFFSET 3 
+
+```
+
+---
+
+Pick up on slide 38
+
