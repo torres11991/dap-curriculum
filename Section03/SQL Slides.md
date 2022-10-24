@@ -8,6 +8,9 @@
 
 A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.  
 
+---
+## continued
+
 Before the adoption of RDBMS systems flat files were often used for each table.
 
 In Excel each tab could be thought of as a table and the workbook itself as a database.
@@ -45,13 +48,13 @@ It changed everything.
 
 ---
 
-# Standard Data Types
+# SQL Data Types
 
-Char - a fixed length string
-Varchar - variable length string
-Integer - whole numbers (can be signed or unsigned)
-Float - a floating point number (used for scientific calculations - do not use for financial calculations)
-Decimal - a fixed-point number
+- Char - a fixed length string
+- Varchar - variable length string
+- Integer - whole numbers (can be signed or unsigned)
+- Float - a floating point number (used for scientific calculations - do not use for financial calculations)
+- Decimal - a fixed-point number
 
 
 https://www.w3schools.com/sql/sql_datatypes.asp
@@ -61,23 +64,25 @@ NULL - is not a datatype
 
 ---
 
-# SQLite Datatypes
+# SQLite Data Types
 
-## Storage Classes and Datatypes
+SQLite now supports the more detailed and restrictive typing found in other RDBMS systems but it started with Storage Classes. 
 
 Each value stored in an SQLite database (or manipulated by the database engine) has one of the following storage classes:
 
+---
+## SQLite Storage Classes (Types)
 -   **NULL**. The value is a NULL value.
--   **INTEGER**. The value is a signed integer, stored in 0, 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
--   **REAL**. The value is a floating point value, stored as an 8-byte IEEE floating point number.
--   **TEXT**. The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
+-   **INTEGER**. The value is a signed integer
+-   **REAL**. The value is a floating point value
+-   **TEXT**. The value is a text string
 -   **BLOB**. The value is a blob of data, stored exactly as it was input.
 
 https://www.sqlite.org/datatype3.html
 
 ---
 
-# Exercise One - SQLite 
+# Exercise One 
 
 Prerequisites: 
 - SQLite - https://www.sqlite.org/download.html
@@ -107,7 +112,10 @@ From the SQLite terminal:
 - DepartmentName Text
 
 ``` sql 
-create table Departments(DepartmentId int, DepartmentName text)`
+create table Departments
+	(DepartmentId int
+	, DepartmentName text
+	)
 ```
 
 https://www.sqlite.org/lang_createtable.html
@@ -125,6 +133,9 @@ https://www.sqlite.org/lang_createtable.html
 - StudentId Int Primary Key
 - StudentName Text 
 
+---
+
+## Create tables 3
 ### Grades
 - StudentId Int Primary Key
 - SubjectId Int
@@ -137,23 +148,36 @@ _You might want to wait on creating these... there may be a better way in anothe
 ## Inserting Data
 
 ``` sql
-insert into Departments(DepartmentId, DepartmentName) values(1, "IT");
+insert into Departments
+		(DepartmentId, DepartmentName) 
+	values(1, "IT");
 
-insert into Departments(DepartmentId, DepartmentName) values(2, "Arts"),(3,"Spanish");
+insert into Departments
+		(DepartmentId, DepartmentName) 
+	values(2, "Arts")
+		,(3,"Spanish");
 
-insert into Departments(DepartmentId, DepartmentName) values(4, "History"),(5,"Science"),(6, "Band"),(7,"StudyHall");
+insert into Departments
+		(DepartmentId, DepartmentName)
+	values(4, "History")
+		,(5,"Science")
+		,(6, "Band")
+		,(7,"StudyHall");
+		
 ```
 
 https://www.sqlite.org/lang_insert.html
 
 ---
 
-# Exercise 2 - DBBrowser
+# Exercise 2
 
-## Open DB Browser
-- Open Database and select `practice.sqlite`
+## DB Browser
+- Click on Open Database and select: `practice.sqlite`
 - Click on create table and type out the column names, datatype, and attributes for each of the remaining tables. 
-- DB Browser creates the code for you:
+
+---
+### DB Browser creates the code
 
 ``` sql
 CREATE TABLE "Subjects" (
@@ -164,8 +188,9 @@ CREATE TABLE "Subjects" (
 );
 ```
 
-## Do this for the remaining tables
-- Students and Grades
+#### Do this for the remaining tables
+- Students
+- Grades
 
 ---
 
@@ -223,10 +248,9 @@ There would be many more records to enter here but I think everyone is ready to 
 
 ---
 
-# Somethings to ponder
-
+# Some things to ponder
 1. Where are the relationships?
-2. Can you think of a reason why I am about to use the word, "Intersection"
+2. Does the word intersection mean anything in this context?
 3. Why doesn't the Grades table have a primary key
 	1. What makes this table special?
 	2. Could / Should it have a primary key
@@ -307,6 +331,10 @@ So far we have been content using the computer friendly id columns to work throu
 
 Let's take a look at a better way of working with query results.
 
+In the example earlier with the dropped class you really needed to trust me that the keys were correct, right? If you entered your data manually then the keys may have been wrong. Let's take a look at making queries friendlier. 
+
+---
+
 ## Welcome to inner joins 
 
 ``` sql
@@ -379,6 +407,7 @@ select s.StudentName as "Student Name"
 			on g.SubjectId = c.SubjectId
 		;
 
+
 ```
 
 ---
@@ -390,23 +419,8 @@ select s.StudentName as "Student Name"
 - I almost never see right joins in the wild
 - Technical Debt is real - some say code is a liability. 
 - Venn Diagrams.
-- Fun fact - SQLite does not support Right Joins.
 
 https://www.w3schools.com/sql/sql_join.asp
-
-The ANSI standard for SQL calls a left join a left outer join. If you see it documented like this just know that the interpreters that I have worked with all accept both syntaxes. 
-
-
----
-
-# Full Outer Join
-
-SQLite also does not support this join type so unless you decide to use a different engine then you will not be able to experiment with this. 
-
-A full outer join returns all of the data from both tables. 
-
-There is a way to emulate this if you need it: 
-- https://en.wikipedia.org/wiki/Join_%28SQL%29#Full_outer_join
 
 ---
 
@@ -487,15 +501,11 @@ select s.StudentName
 	from Students s
 		where s.StudentID > 5
 			and s.StudentName like 'm%'
-			or s.StudentName like 'n%'
+			or s.StudentName like 's%'
 			
 ```
  
  Might not be what you are looking for...
-
----
-
-Maybe these are the students you are looking for:
 
 ``` sql 
 
