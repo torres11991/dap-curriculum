@@ -264,6 +264,8 @@ Code, create, and learn together by using the free, collaborative, in-browser Re
 The best place to build, test, and discover front-end code.
 CodePen.io is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.
 
+### **[]()**
+
 <br>
 
 ---
@@ -311,6 +313,9 @@ Create a profile for yourself and select your areas of interest
 
 ## Python Resources
 
+<<<<<<< HEAD
+- [How to add Python to Windows PATH](https://datatofish.com/add-python-to-windows-path/)
+=======
 Best resources for learning Python for beginners
 
 - [Learn Python - Full Course for Beginners  (freeCodeCamp)](https://www.youtube.com/watch?v=rfscVS0vtbw)
@@ -345,6 +350,7 @@ Best resources for learning Python for beginners
     In this Programming with Mosh YouTube course,  you will learn programming basics like variables, loops, strings, tuples, functions, classes and more. [For additional practice, you can go through Mosh's 53 Python Exercises for Beginners.](https://programmingwithmosh.com/python/python-exercises-and-questions-for-beginners/)
 - [Scientific Computing with Python (freeCodeCamp)](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
     In this freeCodeCamp certification course, you will learn about loops, lists, dictionaries, networking, web services and more. You will also have the opportunity to build five projects: Arithmetic Formatter, Time Calculator, Budget App, Polygon Area Calculator, and Probability Calculator.
+>>>>>>> main
 
 <br>
 
