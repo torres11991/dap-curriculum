@@ -1,8 +1,8 @@
-# 6.3 Python Homework
+# 6. Python Homework
 
 ## Arrays and Array Methods
 
-Create a file and name it 6_3-Homework (this can be a Python file or a Jupyter Notebook file)
+Create a file and name it 6-Homework (this can be a Python file or a Jupyter Notebook file)
 
 <br>
 
@@ -34,3 +34,14 @@ Create a file and name it 6_3-Homework (this can be a Python file or a Jupyter N
     ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
 1. Import NumPy and create an array with an Array shape of ... (2, 3, 2)
+
+1. Use NumPy `.linspace()` to create an array with 6 linearly spaced values between 0 and 20
+
+## When done with homework:
+
+When homework has been completed, do the following...
+
+- Make sure your homework file is well named
+- Add the homework to your Homework folder
+- Use  git add, git commit, and git push to upload your homework changes to GitHub in the cloud
+- Create a ticket in Jira to indicate that your Homework is ready for review
