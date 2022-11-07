@@ -58,7 +58,7 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
 
 <br>
 
-7. Using simple mat operations, broadcast the addition `(+)`, division `(/)`, and multiplication `(*)` operations for these 2 arrays --
+7. Using simple math operations, broadcast the addition `(+)`, division `(/)`, and multiplication `(*)` operations for these 2 arrays --
 
 ```python
     ([[[ 0.0,  0.0,  0.0], [10.0, 10.0, 10.0]],
@@ -68,8 +68,13 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
     ([[17.0, 70.0, 10.7]])
 ```
 
-8. Use the 
-### When done with homework:-
+8. Use the Arithmetic functions to do the subtraction of the above to arrays in pont #7.
+
+9. Using modulo find all elements that are divisible by 2 from the multi-dimensional array under point #7 above.
+
+<br>
+
+### **When done with homework:-**
 
 When homework has been completed, do the following...
 
