@@ -2,15 +2,25 @@
 
 ## NumPy, Pandas, and MatPlotlib
 
-Create a file and name it 7-Homework (this can be a Python file or a Jupyter Notebook file)
+Create a file and name it 7-Homework (this should be a Jupyter Notebook file so you can write MarkDown and Python code)
 
 <br>
 
 Answer these questions:-
 
-1. NumPy arrays a are like what Python data type?
+1. What does one need to do to use a module?
+1. Name a Module (not the DateTime Nodule) we looked at and write a line or 2 of code as an example using this module.
+1. What is a benefit of using Exception handling?
+1. NumPy arrays are like what Python data type?
 1. What is one of the main benefits of using NumPy arrays.
-
+1. What is one of the main requirements about the 'dtype' of NumPy arrays?
+1. Of the 10 uses of NumPy, name 2.
+1. Name one of the other libraries we'll use with NumPy?
+1. What is the shape of NumPy arrays?
+1. What is a Tensor?
+1. Name a reason why it's better using  NumPy for Data Analysis than using a Python List?
+1. When creating an "empty" array, where do the elements come from?
+1. 
 
 
 ## When done with homework:

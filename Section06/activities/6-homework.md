@@ -33,6 +33,10 @@ Create a file and name it 6-Homework (this can be a Python file or a Jupyter Not
 1. Use the correct syntax to sort this list in reverse order
     ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
+1. Use the DateTime module to get Current Date and Time, and save it to a variable. Then extract just the month name for that variable.
+
+1. Write a simple function that takes 2 parameters -- a  first name and a day name. Set a default value for the day name of Sunday. Have the function print out a greeting -- using the parameters -- that says something like "Hi first-name! Happy day-name!". Remember to use the variables in the greeting to replace first-name and day-name.  Invoke this function with 2 variables.
+
 1. Import NumPy and create an array with an Array shape of ... (2, 3, 2)
 
 1. Use NumPy `.linspace()` to create an array with 6 linearly spaced values between 0 and 20
