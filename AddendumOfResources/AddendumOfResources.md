@@ -36,7 +36,7 @@
 
 ### J
 
-
+- [Jupyter Notebook](#jupyter-notebook)
 ### M
 
 - [Markdown crash course](#markdown-crash-course)
@@ -264,7 +264,27 @@ Code, create, and learn together by using the free, collaborative, in-browser Re
 The best place to build, test, and discover front-end code.
 CodePen.io is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.
 
-### **[]()**
+<br>
+
+---
+
+<br>
+
+### Jupyter Notebook
+
+Here are resources about how to best use Jupyter Notebooks
+
+- The Jupyter Notebooks Project -- 	https://jupyter.org
+
+- Jupyter Notebook Quick Start Guide -- https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html
+
+- How to Use Jupyter Notebook: A Beginner’s Tutorial –- https://www.dataquest.io/blog/jupyter-notebook-tutorial
+
+- Excellent Article on beautifying Jupyter Notebooks -- https://towardsdatascience.com/enrich-your-jupyter-notebook-with-these-tips-55c8ead25255
+
+- How to optimize your Jupyter Notebook (article) -- https://www.freecodecamp.org/news/optimize-your-jupyter-notebook/
+
+- Complete Intro to Jupyter Series (video) -- https://www.freecodecamp.org/news/complete-intro-to-jupyter-series-video/
 
 <br>
 
