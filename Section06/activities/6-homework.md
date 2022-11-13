@@ -50,6 +50,8 @@ Create a file and name it 6-Homework (this can be a Python file or a Jupyter Not
 
 14. Make a Deep Copy of the above array you created.
 
+15. What are 2 reasons we use NumPy over Python Lists
+
 <br>
 
 ## When done with homework:
