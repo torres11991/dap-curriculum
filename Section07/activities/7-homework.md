@@ -39,7 +39,7 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
 
 4. Unpack the array tuples from the above 'reshapedArray'  into 4 well named variables. Print the 4 variables.
 
-5. Combined and sort these arrays into one called 'comboArray' ...
+5. Combined and sort the following arrays into one called 'comboArray' ...
 
 ```python
     one = ([10, 11, 12, 13, 14, 15, 16, 17])
@@ -61,16 +61,16 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
 7. Using simple math operations, broadcast the addition `(+)`, division `(/)`, and multiplication `(*)` operations for these 2 arrays --
 
 ```python
-    ([[[ 0.0,  0.0,  0.0], [10.0, 10.0, 10.0]],
-        [[20.0, 20.0, 20.0], [30.0, 30.0, 30.0]],
-        [[40.0, 24.0, 40.0], [15.0, 15.0, 25.5]]])
+    ([[[ 0.0,  0.0,  0.10], [10.0, 10.30, 10.01]],
+        [[20.0, 20.02, 20.10], [30.0, 31.0, 30.30]],
+        [[40.40, 24.0, 40.0], [15.0, 15.5, 25.5]]])
 
     ([[17.0, 70.0, 10.7]])
 ```
 
-8. Use the Arithmetic functions to do the subtraction of the above to arrays in pont #7.
+8. Use the Arithmetic functions to do the subtraction of the above two arrays in pont #7.
 
-9. Using modulo find all elements that are divisible by 2 from the multi-dimensional array under point #7 above.
+9. Using modulo find all elements that are divisible by 3 from the multi-dimensional array under point #7 above.
 
 <br>
 
