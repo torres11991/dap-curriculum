@@ -20,6 +20,12 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
 1. What is a Tensor?
 1. Name a reason why it's better using  NumPy for Data Analysis than using a Python List?
 1. When creating an "empty" array, where do the elements come from?
+1. What does Pandas stand for?
+1. What are the 2 collections used in Pandas?
+1. Name 4 things Pandas can do for us.
+1. To permanently sort a DataFrame, which keyword should one use with the `df.sort()` method?
+1. What is a CSV
+1. When cleaning data what values do we not like in our data?
 
 <br>
 
@@ -71,6 +77,30 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
 8. Use the Arithmetic functions to do the subtraction of the above two arrays in pont #7.
 
 9. Using modulo find all elements that are divisible by 3 from the multi-dimensional array under point #7 above.
+
+10. Create a `Series` that looks like this:
+
+```log
+    Flour     4 cups
+    Milk       1 cup
+    Eggs     2 large
+    Spam       1 can
+    Name: Dinner, dtype: object
+```
+
+11. 
+
+12. 
+
+13. 
+
+14. Save this `DataFrame` here below to disc as a `csv` file with the name `cows_and_goats.csv`:
+
+```python
+    df = pd.DataFrame({'Cows': [12, 20], 'Goats': [22, 19]}, index=['Year 1', 'Year 2'])
+```
+
+15. (A) Using Pandas, make your own .CSV file with data and save it. (B) Using Pandas, make a change to your CSV file, and save a copy with a different name.
 
 <br>
 
