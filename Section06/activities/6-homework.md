@@ -10,7 +10,7 @@ Create a file and name it 6-Homework (this can be a Python file or a Jupyter Not
 
 2. Create and chain an if-else  statement: if 'age' is greater than or equal to 25, print "Renting a car is more affordable." If 'age' is less than 25 but greater than or equal to 18, print "Renting a car is very expensive." Finally, if age is less than 18, print "You cannot legally rent a car."
 
-3. Loop over the following string to (1) count all the characters in the string and print out all the vowels -- "The quick brown fox jumps over the lazy dog"
+3. Loop over the following string to (1) count all the characters in the string and (2) print out all the vowels -- "The quick brown fox jumps over the lazy dog"
 
 4. Write a nested loop that prints out every piece of clothing from the `couture` list, in every fashionable color from the `panettone` set: couture = ["trousers", "blouse", "bandana", "cumber band", "blazer", "vest", "french beret", "scarf", "stole"] and panettone = {"cerise", "fuchsia", "aqua", "maple", "auburn", "burnt sienna", "gunmetal blue", "Dark Sapphire"}
 
@@ -43,7 +43,7 @@ Create a file and name it 6-Homework (this can be a Python file or a Jupyter Not
 14. Use the correct syntax to sort this list in reverse order
     ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 
-15. Use the DateTime module to get Current Date and Time, and save it to a variable. Then extract just the month name form that variable.
+15. Use the DateTime module to get Current Date and Time, and save it to a variable. Then extract just the Full month name form that variable.
 
 16. Write a simple function that takes 2 parameters -- a  first name and a day name.
     - Set a default value for the day name of Sunday.
@@ -53,13 +53,13 @@ Create a file and name it 6-Homework (this can be a Python file or a Jupyter Not
 
 <br>
 
-17. Import NumPy and create an array with a shape of ... (2, 3, 2)
+17. Import NumPy, use one of the NumPy methods and create an array with a shape of ... (2, 3, 2). You can use the reshape method -- `.reshape()`
 
 18. Use NumPy `.linspace()` to create an array with 6 linearly spaced values between 0 and 20
 
 19. Make a Deep Copy of the above array you created.
 
-20. What are 2 reasons we use NumPy over Python Lists
+20. What are 2 reasons we use NumPy arrays over Python Lists
 
 <br>
 
