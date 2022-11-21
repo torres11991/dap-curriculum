@@ -74,33 +74,50 @@ Create a file and name it 7-Homework (this should be a Jupyter Notebook file so 
     ([[17.0, 70.0, 10.7]])
 ```
 
-8. Use the Arithmetic functions to do the subtraction of the above two arrays in pont #7.
+8. Use the NumPy Arithmetic functions to do the subtraction of the above two arrays in pont #7.
 
 9. Using modulo find all elements that are divisible by 3 from the multi-dimensional array under point #7 above.
 
-10. Create a `Series` that looks like this:
+10. Using `Series`, create a `DataFrame` that looks like this:
 
-```log
-    Flour     4 cups
-    Milk       1 cup
-    Eggs     2 large
-    Spam       1 can
+    | Ingredients | Quantity | Unit |
+    |----|----|----|
+    | Flour | 4 | cups |
+    | Milk | 1 | cup |
+    | Eggs | 2 | large |
+    | Spam | 1 | can |
+
     Name: Dinner, dtype: object
+
+<br>
+
+11. Take this data and create a DataFrame named studentData
+
+```Python
+    {'Name': ['Jai', 'janusha', 'Gaurav', 'Anuj'],
+        'Height': [5.1, 6.2, 5.1, 5.2],
+        'Qualification': ['Msc', 'MA', 'Msc', 'Msc'],
+        'address': ['Delhi', 'Doha', 'Chennai', 'Dakhar'],
+        'Age': [21, 23, 24, 21],
+        'Pets': ['Dog', 'Bunny', 'Chinchilla', 'Parrot'],
+        'sport': ['Darts', 'Basketball', 'PaddleBoarding', 'Cricket']
+    }
 ```
 
-11. 
+<br>
 
-12. 
+12. Add a new column to the DataFrame with the following deserts:
+        ["ice cream", "Cashew Fudge", "waffels", "Carrot Halwa"]
 
-13. 
+13. Sort the 'studentData' DataFrame in Ascending order -- Sorting by column 'Name' and then "address"
 
-14. Save this `DataFrame` here below to disc as a `csv` file with the name `cows_and_goats.csv`:
+14. Save this `DataFrame` here below to disc as a `.CSV` file with the name `cows_and_goats.csv`:
 
 ```python
     df = pd.DataFrame({'Cows': [12, 20], 'Goats': [22, 19]}, index=['Year 1', 'Year 2'])
 ```
 
-15. (A) Using Pandas, make your own .CSV file with data and save it. (B) Using Pandas, make a change to your CSV file, and save a copy with a different name.
+15. (A) Using Pandas, make your own .CSV file with data on vegetables and save it. (B) Using Pandas, make a change to your CSV file, and save a copy with a different name.
 
 <br>
 
