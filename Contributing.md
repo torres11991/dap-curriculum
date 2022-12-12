@@ -4,7 +4,7 @@ We welcome contributions from everyone and appreciate your consideration in help
 
 ## Sprints
 
-We work in 12 week sprints that align from the cohort Demo Day to cohort Demo Day.
+We work in 12 week sprints that align from the cohort Orientation day to cohort Orientation Day.
 
 Enhancement and Bug Issues are created in the respective project repositories under the Issues tab.
 
@@ -57,21 +57,67 @@ It is preferred that you select an issue from the Backlog swimlane as near the t
 
 ## Update the curriculum and teacher's guide
 
-### Clone the appropriate repository
+The steps included in this section should be completed for all appropriate repositories.
 
+Review the [Style Guide](#style-guide) before making any changes
+
+### Clone the appropriate repository (If necessary)
+
+If necessary please follow the [Setting Up your Git and GitHub security](Section00/0.1.1-GitHub_SSH_Key.md) process outlined in the curriculum.
+
+Open a terminal and navigate to a base folder where you would like to clone the repositories in using the `cd` command.
+
+Example: `cd /c/git/savvy-coders`
+
+Execute the Git clone command to create a local copy of the remote repository locally.
+
+Example: `git clone git@github.com:savvy-coders/dap-curriculum.git`
+
+The repository Git SSH clone paths are:
+  - DAP Curriculum : git@github.com:savvy-coders/dap-curriculum.git
+  - DAP Teacher's Guide : git@github.com:savvy-coders/dap-teachers-guide.git
+  
+Change directories into the newly created local repository
+
+Example: `cd dap-curriculum`
+
+### Update dependencies using NPM
+
+Execute the NPM install command to update any development dependencies the project has configured.
+
+Example: `npm install`
 
 ### Create the issue branch within your local repository
 
+Verify that you are on the `development` branch and that it is up to date.
+
+Example: `git checkout development` && `git pull --rebase`
+
+Create the issue/feature branch to begin your work using a prefix of `dap-` and the issue number assigned.  There is no need to provide a description in the branch name.   The description will be added later during the commit and pull request processes.
+
+Example: `git checkout -b dap-11`
+
+The above command will create and checkout the branch at the same time.   You are now ready to begin altering files.
 
 ### Update the appropriate files
 
+Open your editor and begin updating files as required by the acceptance criteria of the issue following the below [Style Guide](#style-guide).
 
-### Style Guide
+Example `code .`
 
-All code should be within Code Blocks using triple ticks (```)
+## Style Guide
+
+All code should be within Code Blocks using triple ticks (```) for MarkDown files or within Code blocks in Jupyter Notebook files.
+
+### Commit your changes to your local repository
 
 
-### Commit and push your issue branch to the remote repository
+
+
+### Merge latest development branch into issue branch
+
+
+### Push your issue branch to the remote repository
 
 
 ## Create a pull request (PR) for review
@@ -87,3 +133,5 @@ All code should be within Code Blocks using triple ticks (```)
 ## Merge approved pull request (PR)
 
 ## Releasing the product of the sprint to "Production"
+
+The release process should be done by a single designated person at the appointed time before the beginning of the next cohort.   Typically completed by the Project Lead or Project Manager the Monday prior to Orientation day.
