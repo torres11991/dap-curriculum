@@ -36,6 +36,7 @@ After you create an issue, the team will assign a priority to the issue, ensure 
 Please review the issues on the [DAP Curriculum kanban board](https://github.com/orgs/savvy-coders/projects/3) and select an issue.
 
 ### The columns in the kanban board are as follows:
+
 <dl>
   <dt>Ideas</dt>
   <dd>A swimlane for issues that are considered ideas but not worked until additional debate and consideration</dd>
@@ -74,8 +75,9 @@ Execute the Git clone command to create a local copy of the remote repository lo
 Example: `git clone git@github.com:savvy-coders/dap-curriculum.git`
 
 The repository Git SSH clone paths are:
-  - DAP Curriculum : git@github.com:savvy-coders/dap-curriculum.git
-  - DAP Teacher's Guide : git@github.com:savvy-coders/dap-teachers-guide.git
+
+- DAP Curriculum : git@github.com:savvy-coders/dap-curriculum.git
+- DAP Teacher's Guide : git@github.com:savvy-coders/dap-teachers-guide.git
   
 Change directories into the newly created local repository
 
@@ -93,6 +95,8 @@ Verify that you are on the `development` branch and that it is up to date.
 
 Example: `git checkout development` && `git pull --rebase`
 
+We use the [Gitflow process](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) during the development process.  We use releases and tags instead of creating release branches.
+
 Create the issue/feature branch to begin your work using a prefix of `dap-` and the issue number assigned.  There is no need to provide a description in the branch name.   The description will be added later during the commit and pull request processes.
 
 Example: `git checkout -b dap-11`
@@ -107,12 +111,17 @@ Example `code .`
 
 ## Style Guide
 
-All code should be within Code Blocks using triple ticks (```) for MarkDown files or within Code blocks in Jupyter Notebook files.
+- All code should be within Code Blocks using triple ticks (```) for MarkDown files or within Code blocks in Jupyter Notebook files.  This enables the "copy code block" functionality when viewing the MarkDown.
 
 ### Commit your changes to your local repository
 
+After updates are at a place where you are comfortable with committing them to your issue branch.   Execute the following steps:
 
+- `git status` to verify that the expected files and changes are going to be committed.
+- `git add .` or `git add {filename}` for each file to be committed.
+- `git commit -m"{message}"` where the message includes the branch name followed by a colon and then the description of the ticket.
 
+Example: `git commit -m"DAP-11: Create a contribution.md document"`
 
 ### Merge latest development branch into issue branch
 
