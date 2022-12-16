@@ -115,7 +115,7 @@ Example `code .`
 
 ### Commit your changes to your local repository
 
-After updates are at a place where you are comfortable with committing them to your issue branch.   Execute the following steps:
+After updates are ready to committing them to your issue branch.   Execute the following steps:
 
 - `git status` to verify that the expected files and changes are going to be committed.
 - `git add .` or `git add {filename}` for each file to be committed.
@@ -125,17 +125,45 @@ Example: `git commit -m"DAP-11: Create a contribution.md document"`
 
 ### Merge latest development branch into issue branch
 
+Once you have completed all your changes and committed them to your local repo and ready to push your issue related changes.  You should merge the latest changes from development into your issue branch so that everything is kept in sync.
+
+- `git checkout development` to checkout the development branch locally.
+- `git pull --rebase` to pull the latest changes from the remote repo.
+- `git checkout {issue branch i.e.: dap-11}` to checkout your issue branch.
+- `git merge development` to merge the latest changes from development
+
+Fix any merge conflicts, then add, commit and push the merged issue branch as described above.
+
+#### VS Code source control documentation/tutorials:
+
+- [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+- [The EXTREMELY helpful guide to merge conflicts](https://www.youtube.com/watch?v=HosPml1qkrg)
 
 ### Push your issue branch to the remote repository
 
+After all the remote changes have been merged, the issue branch is now ready to push to the remote repository.
+
+- `git push` to push the latest local changes on the issue branch to the remote repo.
 
 ## Create a pull request (PR) for review
 
-- Navigate to the appropriate repository's 'Pull requests' tab
+Once your issue branch is complete and pushed to the remote branch it is now time to create a pull request (PR) to be reviewed by your peers.
+
+- Navigate to the appropriate repository's ['Pull requests' tab](https://github.com/savvy-coders/dap-curriculum/issues) 
 - Click the 'New pull request' button
   - There may be a 'Compare & pull request' button to create the PR for you branch, this button may be used but make sure that the destination branch is `development` and NOT `master`/`main`
 - Select `development` as the compare branch and `main` as the base branch.
-- The list of commits and the changed files will be displayed
+- The list of commits and the changed files will be displayed, review the lists to determine that nothing unexpected appears.
+![Compare Change](./img/contributing/compare-changes.jpg)
+- Click the 'Create Pull Request' button
+- Fill in the Title with the Issue Number and Title
+  - Example: DAP-11 Create a contribution.md document
+- Fill in the Description with the Issue Link
+![Create Pull Request](./img/contributing/create-pr.jpg)
+- Assign the appropriate peers to review the changes
+- Click the 'Create Pull Request' button
+
+All reviewers will recieve a notification that they were chosen to review the pull request.
 
 ## Review curriculum and teacher's guide pull requests
 
