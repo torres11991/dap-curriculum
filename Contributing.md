@@ -167,7 +167,19 @@ All reviewers will recieve a notification that they were chosen to review the pu
 
 ## Review curriculum and teacher's guide pull requests
 
+Navigate to the appropriate repository and click on the pull request to be reviewed or follow the link that was in the notification.
+
+![List of pull requests](./img/contributing/pr-list.jpg)
+
+The pull request will be displayed with the following tabs showing, Conversation, Commits, Checks and Files changed.
+
+![Pull request conversation tab](./img/contributing/pull-request-conversation.jpg)
+
+
+
 ## Merge approved pull request (PR)
+
+Make sure to delete the issue branch after a successful PR merge.
 
 ## Releasing the product of the sprint to "Production"
 
