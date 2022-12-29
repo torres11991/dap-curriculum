@@ -109,9 +109,9 @@ Open your editor and begin updating files as required by the acceptance criteria
 
 Example `code .`
 
-## Style Guide
-
-- All code should be within Code Blocks using triple ticks (```) for MarkDown files or within Code blocks in Jupyter Notebook files.  This enables the "copy code block" functionality when viewing the MarkDown.
+> ## Style Guide (Work in Progress)
+>
+> - All code should be within Code Blocks using triple ticks (```) for MarkDown files or >within Code blocks in Jupyter Notebook files.  This enables the "copy code block" functionality when viewing the MarkDown.
 
 ### Commit your changes to your local repository
 
@@ -134,10 +134,10 @@ Once you have completed all your changes and committed them to your local repo a
 
 Fix any merge conflicts, then add, commit and push the merged issue branch as described above.
 
-#### VS Code source control documentation/tutorials:
-
-- [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
-- [The EXTREMELY helpful guide to merge conflicts](https://www.youtube.com/watch?v=HosPml1qkrg)
+> #### VS Code source control documentation/tutorials:
+>
+> - [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+> - [The EXTREMELY helpful guide to merge conflicts](https://www.youtube.com/watch?v=HosPml1qkrg)
 
 ### Push your issue branch to the remote repository
 
@@ -147,7 +147,11 @@ After all the remote changes have been merged, the issue branch is now ready to 
 
 ## Create a pull request (PR) for review
 
-Once your issue branch is complete and pushed to the remote branch it is now time to create a pull request (PR) to be reviewed by your peers.
+> As the `main` branch is protected we use the pull request process to manage changes.
+> The official documentation for GitHub Pull Request can be found here:
+> https://docs.github.com/en/pull-requests/collaborating-with-pull-requests
+
+Once your issue branch is complete and pushed to the remote branch it is now time to create a pull request (PR) to be reviewed by your peers.  Post in the Slack #curriculum-team channel with the link to the PR and the story which needs to be reviewed.
 
 - Navigate to the appropriate repository's ['Pull requests' tab](https://github.com/savvy-coders/dap-curriculum/issues) 
 - Click the 'New pull request' button
@@ -175,12 +179,42 @@ The pull request will be displayed with the following tabs showing, Conversation
 
 ![Pull request conversation tab](./img/contributing/pull-request-conversation.jpg)
 
+Click on the "Files Changed" tab and review the files and code that have been updated.
 
+Click the gear to change the "Diff view" and "Hide whitespace" as desired.
+
+The "Viewed" checkbox can be used to collapse the file once it has been reviewed.
+
+The "Code" (<>) and "Preview" ([]) buttons can be used to switch between views.
+
+![Pull request files changed tab](./img/contributing/review-pr-files-changed.jpg)
+
+Comments can be left directly in the code by hovering over the line that needs to be changed and clicking the Plus that appears.  Fill out the comment text area and click "Start a review" or "Add single comment".
+
+![](./img/contributing/review-pr-review-add-code-comments.jpg)
+
+Once you are ready to finalize your review, click the "Review Changes" or "Finish your review" button.
+
+- If the changes are deemed appropriate with no changes needed, select the "Approve" option
+- If you wish to leave a comment and not approve the changes outright, fill in the text area with the appropriate comment then select the "Comment" option
+- If comments have been left in the code, fill in the text area with appropriate comment then select the "Request changes" option
+
+Once the form is appropriately filled out click "Submit review" to finalize your review of the pull request.
+
+![](./img/contributing/review-pr-review-changes.jpg)
 
 ## Merge approved pull request (PR)
 
-Make sure to delete the issue branch after a successful PR merge.
+Once your pull request has the appropriate approvals, it is time to merge it into the `development` branch.
+
+Click the "Merge pull request" and then confirm the you want to complete the merge.   The pull request is now completed.
+
+![](./img/contributing/merge-pr.jpg)
+
+*Please delete the issue branch after a successful PR merge.*
 
 ## Releasing the product of the sprint to "Production"
 
 The release process should be done by a single designated person at the appointed time before the beginning of the next cohort.   Typically completed by the Project Lead or Project Manager the Monday prior to Orientation day.
+
+The instructions for this process are to be added as time allows.
