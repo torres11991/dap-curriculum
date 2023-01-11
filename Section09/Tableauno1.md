@@ -78,7 +78,7 @@ The right information to the right people at the right time to aid in better dec
 - Analyze in real-time
 - Collaborate with other team members
 
-## Advantages
+### Advantages
 
 - Scripting language
 - Data VIsualization
@@ -87,7 +87,7 @@ The right information to the right people at the right time to aid in better dec
 - Easy Implementation
 - Responsive Dashboard
 
-## Disadvantages
+### Disadvantages
 
 - Restrictive Imports
 - Custom Formatting
@@ -95,15 +95,15 @@ The right information to the right people at the right time to aid in better dec
 - Screen Resolution
 - Scheduling Reports
 
-## Tableau Public
+### Tableau Public
 
 Can load from 9 different data sources
 
-## Tableau Desktop
+### Tableau Desktop
 
 Can load from 77 different data sources
 
-## OPENING TABLEAU PUBLIC
+### OPENING TABLEAU PUBLIC
 
 1. CONNECT PANE: where various data sources can be connected
 2. OPEN PANE: where you can see recently opened files/sample dashboards
@@ -113,14 +113,14 @@ Can load from 77 different data sources
         CLICK/DRAG 'ORDERS' OVER TO
         THE WHITE AREA ON THE RIGHT
 
-## TABLEAU BREAKDOWN
+### TABLEAU BREAKDOWN
 
 - Each graph should require a NEW worksheet & make sure they are named properly
 - Dashboards are preps for your STORY (aka presentation) 
 - Think of each Dashboard as a “slide” where you put your STORY together. Make sure to name them properly
 - Your STORY is your presentation of how you want to show your Dashboards (aka slides)
 
-## LET'S PRACTICE
+### LET'S PRACTICE
 
 - Plot SALES against CATEGORY, SEGMENT & ORDER DATE
 - Make it a line graph
@@ -129,7 +129,7 @@ Can load from 77 different data sources
 - Make it a bar graph
 - Rename it “Home Office Sales”
 
-## 8 TOOLS TO PREPARE DATA FOR ANALYSIS
+### 8 TOOLS TO PREPARE DATA FOR ANALYSIS
 
 - JOINS
 - RELATIONSHPS 
@@ -140,7 +140,7 @@ Can load from 77 different data sources
 - DATA INTERPRETER
 - SPLIT
 
-## JOINS
+### JOINS
 
 Combine data in order to filter and get rid of duplicates
 
@@ -149,4 +149,59 @@ Combine data in order to filter and get rid of duplicates
 - Inner Join
 - Full Outer Join
 
+1. Connect to the Super-Store dataset
+2. Move "Orders' and click Open
+3. Right-click on "Orders' and click Open
+4. Move "Returns" over to the canvas
+        - This creates an inner join BY DEFAULT
+5. Select the correct join
+
+Tableau will identify the primary key for joining two or more data sets together
+
+- Left Join: values from LEFT Table & match to RIGHT Table
+- Right Join: values from RIGHT Table & matchto LEFT Table
+- Inner Join: includes common data present in BOTH datasets
+- Full Outer Join: includes ALL values from both tables
+
+### RELATIONSHIPS
+
+- Created when you drag more than one sheet over
+- Think of it as a contract between two tables
+- No joining
+- Automatic & contrext aware
+- Flexible
+
+## JOINS vs RELATIONSHIPS
+
+### UNIONS
+
+Helps bring together data from multiple small files into one large one.
+
+1. Connect to dataset
+2. Drag over needed sheet
+3. Drag over another to overlap (you'll see "union")
+4. Overlapping icon
+
+### Data Blending
+
+Tableau combines related data from multiple sources in a single view
+
+1. Connect two sources (Superstore & GLobal Superstore)
+2. Click on Data table & "Edit Blend Relationships"
+3. Choose "Segment" and "OK"
+4. Drag "Profit" from both sets over to Columns
+5. Drag "Segment" from Global Superstore over to Rows
+
+### Blend 
+
+- Used to combine data from different databases that don't support joins
+- Data within databases are at different levels of detail
+- Joins = duplicate rows
+- Involves large amount of data
+
+### Join
+
+- Data format is consistent across ALL sources
+- Involves small amounts of data
+- Data is at the same level of detail across sources
 
