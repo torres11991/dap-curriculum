@@ -1,4 +1,7 @@
 # TABLEAU
+
+---
+
 ## DATA ANALYSIS CAN BE BORING
 
 - Searching for/obtaining data
@@ -12,6 +15,8 @@
         YOU HAVE TO MAKE IT INTERESTING!
         You WANT to be able to tell your STORY!
 
+---
+
 ## WHAT IS TABLEAU
 
 A very powerful data visualization software that helps people view and understand data
@@ -23,6 +28,8 @@ A very powerful data visualization software that helps people view and understan
 - There's a HUGE community of Tableau users
 - No coding necessary
 
+---
+
 ## POSSIBLE JOB TITLES
 
 - Business Analyst
@@ -30,6 +37,7 @@ A very powerful data visualization software that helps people view and understan
 - Data Analyst
 - BI Analyst
 - BI Developer
+
 ## POSSIBLE EMPLOYERS
 - Verizon
 - Lenovo
@@ -63,12 +71,16 @@ The right information to the right people at the right time to aid in better dec
 - Recognize trends
 - Predict range of successes
 
+---
+
 ## DATA VISUALIZATION
 
 - Uses pictures to represent data
 - Most effective way to communicate
 - LOTS of tools available
 - ALlows for quantitative data to be viewed easier & better decisions made quickly
+
+---
 
 ## DATA VISUALIZATION WITH TABLEAU
 
@@ -95,6 +107,8 @@ The right information to the right people at the right time to aid in better dec
 - Screen Resolution
 - Scheduling Reports
 
+---
+
 ### Tableau Public
 
 Can load from 9 different data sources
@@ -103,15 +117,20 @@ Can load from 9 different data sources
 
 Can load from 77 different data sources
 
+---
+
 ### OPENING TABLEAU PUBLIC
 
 1. CONNECT PANE: where various data sources can be connected
 2. OPEN PANE: where you can see recently opened files/sample dashboards
-3. DISCOVER PANE: helps you connect with the Tableau Community and access videos and blogs
+3. DISCOVER PANE: helps you connect with the Tableau Community and access videos and blogs.
+        
         CLICK ON MICROSOFT EXCEL 
-        OPEN SAMPLE - SUPERSTORE
-        CLICK/DRAG 'ORDERS' OVER TO
-        THE WHITE AREA ON THE RIGHT
+         >>> OPEN SAMPLE - SUPERSTORE
+                CLICK/DRAG 'ORDERS' OVER TO 
+                        THE WHITE AREA ON THE RIGHT
+
+---
 
 ### TABLEAU BREAKDOWN
 
@@ -128,6 +147,8 @@ Can load from 77 different data sources
 - Delete top title
 - Make it a bar graph
 - Rename it “Home Office Sales”
+
+---
 
 ### 8 TOOLS TO PREPARE DATA FOR ANALYSIS
 
@@ -171,6 +192,8 @@ Tableau will identify the primary key for joining two or more data sets together
 - Automatic & contrext aware
 - Flexible
 
+---
+
 ## JOINS vs RELATIONSHIPS
 
 ### UNIONS
@@ -205,3 +228,4 @@ Tableau combines related data from multiple sources in a single view
 - Involves small amounts of data
 - Data is at the same level of detail across sources
 
+---
