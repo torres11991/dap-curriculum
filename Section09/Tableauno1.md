@@ -23,7 +23,7 @@ A very powerful data visualization software that helps people view and understan
 
 - It makes it easier for people to explore and manage their data
 - It can be a central location for data from several sources
-- will change raw data into data that is easy to understand
+- Changes raw data into data that is easy to understand
 - It is growing really fast as a key data analytics platform
 - There's a HUGE community of Tableau users
 - No coding necessary
@@ -39,11 +39,14 @@ A very powerful data visualization software that helps people view and understan
 - BI Developer
 
 ## POSSIBLE EMPLOYERS
+
 - Verizon
 - Lenovo
 - Chipotle 
 - REI
 - Charles Schwab
+<br>
+
 ## AS A DATA ANALYST
 
 - You are required to manipulate the data in a tabular and systematic form to help solve some challenges that your company might be facing.
@@ -60,7 +63,7 @@ The right information to the right people at the right time to aid in better dec
 - Data tools 
 - Infrastructure
 
-## Examples
+## EXAMPLES OF WHAT DATA ANALYTICS ENCOMPASSES
 
 - Identify ways to increase profit
 - Track performance
@@ -78,7 +81,7 @@ The right information to the right people at the right time to aid in better dec
 - Uses pictures to represent data
 - Most effective way to communicate
 - LOTS of tools available
-- ALlows for quantitative data to be viewed easier & better decisions made quickly
+- Allows for quantitative data to be viewed easier & better decisions made quickly
 
 ---
 
@@ -135,18 +138,18 @@ Can load from 77 different data sources
 ### TABLEAU BREAKDOWN
 
 - Each graph should require a NEW worksheet & make sure they are named properly
-- Dashboards are preps for your STORY (aka presentation) 
+- Dashboards are "preps" for your STORY (aka presentation) 
 - Think of each Dashboard as a “slide” where you put your STORY together. Make sure to name them properly
 - Your STORY is your presentation of how you want to show your Dashboards (aka slides)
 
 ### LET'S PRACTICE
 
-- Plot SALES against CATEGORY, SEGMENT & ORDER DATE
-- Make it a line graph
-- Filter down to Home Office for each segment
-- Delete top title
-- Make it a bar graph
-- Rename it “Home Office Sales”
+1. Plot SALES against CATEGORY, SEGMENT & ORDER DATE
+2. Make it a line graph
+3. Filter down to Home Office for each segment
+4. Delete the title above the graph
+5. Convert the graph a bar graph
+6. Rename the bar graph “Home Office Sales”
 
 ---
 
@@ -180,7 +183,7 @@ Combine data in order to filter and get rid of duplicates
 Tableau will identify the primary key for joining two or more data sets together
 
 - Left Join: values from LEFT Table & match to RIGHT Table
-- Right Join: values from RIGHT Table & matchto LEFT Table
+- Right Join: values from RIGHT Table & match to LEFT Table
 - Inner Join: includes common data present in BOTH datasets
 - Full Outer Join: includes ALL values from both tables
 
@@ -189,7 +192,7 @@ Tableau will identify the primary key for joining two or more data sets together
 - Created when you drag more than one sheet over
 - Think of it as a contract between two tables
 - No joining
-- Automatic & contrext aware
+- Automatic & context aware
 - Flexible
 
 ---
@@ -209,7 +212,7 @@ Helps bring together data from multiple small files into one large one.
 
 Tableau combines related data from multiple sources in a single view
 
-1. Connect two sources (Superstore & GLobal Superstore)
+1. Connect two sources (Superstore & Global Superstore)
 2. Click on Data table & "Edit Blend Relationships"
 3. Choose "Segment" and "OK"
 4. Drag "Profit" from both sets over to Columns
@@ -224,8 +227,13 @@ Tableau combines related data from multiple sources in a single view
 
 ### Join
 
+Combines data in order to filter and get rid of duplicate content
+
 - Data format is consistent across ALL sources
 - Involves small amounts of data
 - Data is at the same level of detail across sources
 
 ---
+# Summary
+
+In this lesson we went over possible career paths Data Analytics leads to and four tools used to prepare data in Tableau.
