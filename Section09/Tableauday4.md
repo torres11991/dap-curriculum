@@ -92,7 +92,7 @@ Cannot be used in row-level expressions (where there are no dimensions to omit),
 
 ---
 
-# Key performance indicator table
+# Key Performance Indicator Table
 
 1.  Sub-Category to Rows, Region to Columns and Sales to Text
 
@@ -170,3 +170,48 @@ Clustering groups data points together and separating them from other dissimilar
 
 ### Ask Data
 - AI functionality from Tableau Server
+
+1. Click and drag sheets over to the canvas to use
+
+2. Tiled: Fixed Location & Floating: unfixed Location
+
+3. You can highlight data & add URL links
+
+---
+
+## Best Practices
+
+- Choose appropriate visualizations
+
+- Line charts: best for seeing change over time
+
+- Maps: best for seeing geographical data
+
+- Bar Charts: best for seeing highest or lowest value
+
+- It is difficult to read long names vertically
+
+- Choose appropriate size: avoid scroll bars & scrunched views
+
+---
+
+# Your Storyboard
+
+- Groups of dashboards and visuals arranged to tell your story
+
+- They are dynamic and interactive!
+
+- Left side has created dashboards, text option and size
+
+- Layout tab has Navigator styles
+
+- The grey boxes designate slides & provide area for you to make notes
+
+- Drag visualizations and dashboards as appropriate
+
+        Your work gets saved automatically to Tableau Public
+
+---
+# Summary
+
+In this lesson we learned about three levels of detail, KPI tables, dashboards, visualization jargon as well as best practices.
