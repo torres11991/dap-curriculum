@@ -1,3 +1,30 @@
+ Last Day of Tableau Instruction
+
+ ---
+
+ <br>
+
+## CALCULATIONS​ IN TABLEAU
+
+---
+
+## BASIC EXPRESSIONS
+
+### LEVELS OF DETAIL
+
+- Powerful functions that alter the level of detail​
+- Choices can be made between aggregation & granularity​
+- Three different expressions:
+  - **include()** - increases aggregation
+  - **exclude()** - increases granularity
+  - **fixed ()** - increases independence
+
+---
+
+## SUMMARY:
+
+In this section we discussed some of the basic graph types in Tableau, as well as begin a brief discussion on custom calculations.
+
 # Fixed Level of Detail Example
 
 FIXED level of detail expressions compute a value using the specified dimensions, without reference to the dimensions in the view.
@@ -7,11 +34,11 @@ We are going to create a chart that shows the interval between a customer's firs
 1. Open Tableau, connect to Sample Superstore and pull over Orders to canvas, create a new worksheet
 
 2. Click on Analysis and go to Create 2 calculated fields: a FIXED level of detail expression and a date substraction
- - Copy and paste the equation for FIRST PURCHASE DATE:
+ - Copy and paste the equation for **FIRST PURCHASE DATE**:
 
         {FIXED[Customer Name]: MIN([Order Date])}
 
- - Copy and paste the equation for DAYS SINCE FIRST PURCHASE:
+ - Copy and paste the equation for **DAYS SINCE FIRST PURCHASE**:
         DATETRUNC('day',[Order Date])-DATETRUNC('day',[FIRST PURCHASE DATE])
 
 3. Drag Days Since First Purchase from Measures to Dimensions (it’s automatically a Measure because it contains a number)
@@ -41,7 +68,7 @@ Useful when you want to calculate at a fine level of detail in the database and 
         Create a visual of total sales per customer per region
 
 1.  Click on Analysis and Select Create Calculated Field
- - Copy and paste the equation for SalesPerCustomer
+ - Copy and paste the equation for **SalesPerCustomer**
 
         {INCLUDE[Customer Name]: SUM([Sales])}
 
@@ -51,7 +78,9 @@ Useful when you want to calculate at a fine level of detail in the database and 
 
 4.  Drag SALES over to Rows
 
-        Shows the difference between the sum of sales (somewhere between $390k and 700k per region) AND the avg sales per customer (between 750 and 1100 per region) 
+        Shows the difference between the sum of sales 
+        (somewhere between $390k and 700k per region) 
+        AND the avg sales per customer (between 750 and 1100 per region) 
 
 ---
 
@@ -64,7 +93,7 @@ Useful for ‘percent of total’ or ‘difference from overall average’ scena
 Cannot be used in row-level expressions (where there are no dimensions to omit), but can be used to modify either a view level calculation or anything in between (that is, you can use an EXCLUDE calculation to remove dimension from some other level of detail expression).
 
 1.  Go to Analysis and Select “Create Calculated Field”
- - Copy and paste the equation for ExcludeRegion
+ - Copy and paste the equation for **ExcludeRegion**
 
         {EXCLUDE[Region]: SUM([Sales])}
 
@@ -76,7 +105,7 @@ Cannot be used in row-level expressions (where there are no dimensions to omit),
 
 4.  Drag ExcludeRegion over to Color
 
-        Shades the view to show total sales by month w/o regional component
+        Shades the view to show total sales by month without regional component
 
 ---
 ## Vocabulary
@@ -96,7 +125,7 @@ Cannot be used in row-level expressions (where there are no dimensions to omit),
 
 1.  Sub-Category to Rows, Region to Columns and Sales to Text
 
-2.  Create a Calculated Field “KPI”
+2.  Create a Calculated Field **“KPI”**
 
         IF SUM ([SALES]) > 25000 THEN “ABOVE BENCHMARK” ELSE “BELOW BENCHMARK” END
 
@@ -115,6 +144,7 @@ Cannot be used in row-level expressions (where there are no dimensions to omit),
 Tooltips display when you put the mouse over one or more marks in view.
 
 Utilize the Analytics tab for Modeling & Summarizing
+
 Use trend lines in predicting of given data (linear, logarithmic, exponential and polynomial).
 
 Forecasting depends on the number of historical data points available.
@@ -173,7 +203,7 @@ Clustering groups data points together and separating them from other dissimilar
 
 1. Click and drag sheets over to the canvas to use
 
-2. Tiled: Fixed Location & Floating: unfixed Location
+2. **Tiled**: Fixed Location & Floating: unfixed Location
 
 3. You can highlight data & add URL links
 
