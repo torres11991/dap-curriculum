@@ -1,4 +1,4 @@
-# Section 9 Sprint Planning Points
+# Sprint Planning Points
 
 ## Tableau
 
