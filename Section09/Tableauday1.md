@@ -152,16 +152,21 @@ jamesleemeredith marked this conversation as resolved.
 
 <br>
 
-Discrete Data: Notice how every quantity has a header at the bottom
-<br>
 
-![Discrete Data Types in Tableau](./images/Discrete_data_graph.png)
 
 <br>
 
-Continuous Data: Notice how quantity values are shown in a continuous axis
 
-![Continuous Data Types in Tableau](./images/Continuous_data_graph.png)
+# Discrete Data: Notice how every quantity has a header at the bottom
+<br>
+
+![Discrete Data Types in Tableau](./Discrete_data_graph.png)
+
+<br>
+
+# Continuous Data: Notice how quantity values are shown in a continuous axis
+
+![Continuous Data Types in Tableau](./Continuous_data_graph.png)
 
 <br>
 
@@ -180,16 +185,80 @@ Continuous Data: Notice how quantity values are shown in a continuous axis
 
 ---
 
+<br>
+
+# Tableau's User Interface Layout
+
+## Data Source Page
+
+### The Left Pane
+
+- **Green and Purple Boxes Top Left of Data Source Image Below**
+- Displays the connected data source and other details about your data
+- The **purple box** is where you can 
+add more connections to th data source to create cross database joins.
+- The left pane does not display for cube (multidimensional) data.
+
+### Canvas
+
+- **Blue Box** of Data Source Image
+- Consist of two layers <br>
+        - **Logical Layer**: The canvas opens with the logical layer, where you can create relationships between logical tables.<br>
+        - **Physical Layer**: Double-click a table in the logical layer to go to the physical layer of the canvas, where you can add joins and unions between tables.
+
+### Metadata Grid
+- **Red Box** of Data Source Image
+- Displays the fields in your data source
+
+### Data grid
+- **Yellow Box** of Data Source Image
+- Displays first 1,000 rows of the data contained in the Tableau data source.
+
+
+![Tableau Data Source Page Layout](./Tableau_Screen1.png)
+
+<br>
+
+## Tableau Sheets 
+
+### Quick Access Toolbar
+- **Green Box** in image below
+
+### Data Pane
+- **Brown Box** on the left of image
+
+### Pages
+- **Light Blue Box** center left
+
+### Filter
+- **Bright Cherry Box** below Pages
+
+### Marks
+- **Purple Box**
+
+### Shelves
+- **Yellow Box**
+
+### Sheets
+- **Dark Blue Box**
+
+### Show Me
+- **Red Box**
+
+<br>
+
+![Tableau Sheets Layout](./Tableau_Screen2.png)
+
 ### TABLEAU BREAKDOWN
 
 - Each graph should require a NEW worksheet & make sure they are named properly
-- Dashboards are "preps" for your STORY (aka presentation) 
+- Dashboards are *preps* for your STORY (aka presentation) 
 - Think of each Dashboard as a “slide” where you put your STORY together. Make sure to name them properly
 - Your STORY is your presentation of how you want to show your Dashboards (aka slides)
 
 ### LET'S PRACTICE
 
-1. Plot SALES against CATEGORY, SEGMENT & ORDER DATE
+1. Plot [**SALES**] against [**CATEGORY**], SEGMENT & ORDER DATE
 2. Make it a line graph
 3. Filter down to Home Office for each segment
 4. Delete the title above the graph
@@ -213,24 +282,24 @@ Continuous Data: Notice how quantity values are shown in a continuous axis
 
 Combine data in order to filter and get rid of duplicates
 
-- Left Join
-- Right Join
-- Inner Join
-- Full Outer Join
+- **Left Join**
+- **Right Join**
+- **Inner Join**
+- **Full Outer Join**
 
 1. Connect to the Super-Store dataset
-2. Move "Orders' and click Open
-3. Right-click on "Orders' and click Open
-4. Move "Returns" over to the canvas
+2. Move [**Orders**] and click Open
+3. Right-click on [**Orders**] and click Open
+4. Move [**Returns**] over to the canvas
         - This creates an inner join BY DEFAULT
 5. Select the correct join
 
 Tableau will identify the primary key for joining two or more data sets together
 
-- Left Join: values from LEFT Table & match to RIGHT Table
-- Right Join: values from RIGHT Table & match to LEFT Table
-- Inner Join: includes common data present in BOTH datasets
-- Full Outer Join: includes ALL values from both tables
+- **Left Join:** values from LEFT Table & match to RIGHT Table
+- **Right Join:** values from RIGHT Table & match to LEFT Table
+- **Inner Join:** includes common data present in BOTH datasets
+- **Full Outer Join:** includes ALL values from both tables
 
 ### RELATIONSHIPS
 
@@ -250,7 +319,7 @@ Helps bring together data from multiple small files into one large one.
 
 1. Connect to dataset
 2. Drag over needed sheet
-3. Drag over another to overlap (you'll see "union")
+3. Drag over another to overlap (you'll see [**union**])
 4. Overlapping icon
 
 ### Data Blending
@@ -258,10 +327,10 @@ Helps bring together data from multiple small files into one large one.
 Tableau combines related data from multiple sources in a single view
 
 1. Connect two sources (Superstore & Global Superstore)
-2. Click on Data table & "Edit Blend Relationships"
-3. Choose "Segment" and "OK"
-4. Drag "Profit" from both sets over to Columns
-5. Drag "Segment" from Global Superstore over to Rows
+2. Click on [**Data table**] & [**Edit Blend Relationships**]
+3. Choose [**Segment**] and "OK"
+4. Drag [**Profit**] from both sets over to Columns
+5. Drag [**Segment**] from Global Superstore over to Rows
 
 ### Blend 
 
