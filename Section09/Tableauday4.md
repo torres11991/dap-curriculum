@@ -21,10 +21,6 @@
 
 ---
 
-## SUMMARY:
-
-In this section we discussed some of the basic graph types in Tableau, as well as begin a brief discussion on custom calculations.
-
 # Fixed Level of Detail Example
 
 FIXED level of detail expressions compute a value using the specified dimensions, without reference to the dimensions in the view.
