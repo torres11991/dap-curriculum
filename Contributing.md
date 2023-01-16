@@ -158,12 +158,12 @@ Once your issue branch is complete and pushed to the remote branch it is now tim
   - There may be a 'Compare & pull request' button to create the PR for you branch, this button may be used but make sure that the destination branch is `development` and NOT `master`/`main`
 - Select `development` as the compare branch and `main` as the base branch.
 - The list of commits and the changed files will be displayed, review the lists to determine that nothing unexpected appears.
-![Compare Change](./img/contributing/compare-changes.jpg)
+![Compare Change](img/contributing/compare-changes.jpg)
 - Click the 'Create Pull Request' button
 - Fill in the Title with the Issue Number and Title
   - Example: DAP-11 Create a contribution.md document
 - Fill in the Description with the Issue Link
-![Create Pull Request](./img/contributing/create-pr.jpg)
+![Create Pull Request](img/contributing/create-pr.jpg)
 - Assign the appropriate peers to review the changes
 - Click the 'Create Pull Request' button
 
@@ -173,11 +173,11 @@ All reviewers will recieve a notification that they were chosen to review the pu
 
 Navigate to the appropriate repository and click on the pull request to be reviewed or follow the link that was in the notification.
 
-![List of pull requests](./img/contributing/pr-list.jpg)
+![List of pull requests](img/contributing/pr-list.jpg)
 
 The pull request will be displayed with the following tabs showing, Conversation, Commits, Checks and Files changed.
 
-![Pull request conversation tab](./img/contributing/pull-request-conversation.jpg)
+![Pull request conversation tab](img/contributing/pull-request-conversation.jpg)
 
 Click on the "Files Changed" tab and review the files and code that have been updated.
 
@@ -187,11 +187,11 @@ The "Viewed" checkbox can be used to collapse the file once it has been reviewed
 
 The "Code" (<>) and "Preview" ([]) buttons can be used to switch between views.
 
-![Pull request files changed tab](./img/contributing/review-pr-files-changed.jpg)
+![Pull request files changed tab](img/contributing/review-pr-files-changed.jpg)
 
 Comments can be left directly in the code by hovering over the line that needs to be changed and clicking the Plus that appears.  Fill out the comment text area and click "Start a review" or "Add single comment".
 
-![](./img/contributing/review-pr-review-add-code-comments.jpg)
+![](img/contributing/review-pr-review-add-code-comments.jpg)
 
 Once you are ready to finalize your review, click the "Review Changes" or "Finish your review" button.
 
@@ -201,7 +201,7 @@ Once you are ready to finalize your review, click the "Review Changes" or "Finis
 
 Once the form is appropriately filled out click "Submit review" to finalize your review of the pull request.
 
-![](./img/contributing/review-pr-review-changes.jpg)
+![](img/contributing/review-pr-review-changes.jpg)
 
 ## Merge approved pull request (PR)
 
@@ -209,7 +209,7 @@ Once your pull request has the appropriate approvals, it is time to merge it int
 
 Click the "Merge pull request" and then confirm the you want to complete the merge.   The pull request is now completed.
 
-![](./img/contributing/merge-pr.jpg)
+![](img/contributing/merge-pr.jpg)
 
 *Please delete the issue branch after a successful PR merge.*
 
