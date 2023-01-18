@@ -12,12 +12,14 @@
 ## Working with Excel and Excel Functions
 
 - Understand how to work with Excel data and sheets
+- Understand Excel Tables
+- Complete Excel table class exercise and Homework
 - Understand how Functions automate calculations and analysis with large datasets
 - Understand how to apply functions to ranges of data fields in a sheet
 - Understand how to create arguments to calculate values and cell references
 - Understand how to use formulas to simplify complex calculations
 - Understand VLOOKUP for reference analysis
-- Complete the Functions class exercise
+- Complete the Functions class exercise and Homework
 
 ## Excel Pivot Tables Essentials
 
