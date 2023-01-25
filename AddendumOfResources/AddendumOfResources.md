@@ -24,8 +24,6 @@
 
 ### F
 
-
-
 ### G
 
 - [Git and GitHub Resources](#git-and-github-resources)
@@ -37,6 +35,7 @@
 ### J
 
 - [Jupyter Notebook](#jupyter-notebook)
+
 ### M
 
 - [Markdown crash course](#markdown-crash-course)
@@ -59,10 +58,7 @@
 
 - [Sites with additional training courses](#sites-with-additional-training-courses)
 
-
 ### U
-
-
 
 <br>
 
@@ -108,8 +104,8 @@
 - [Fake Store API](https://fakestoreapi.com/)
 - Social Media API's
 - [Twitter](https://dev.twitter.com/docs/api)
-- [Facebook ](http://developers.facebook.com/docs/reference/api/)
-- [LinkedIn ](https://developer.linkedin.com/apis)
+- [Facebook](http://developers.facebook.com/docs/reference/api/)
+- [LinkedIn](https://developer.linkedin.com/apis)
 - [New York Times](https://developer.nytimes.com/)
 - [The Ultimate list of fun APIs](https://learn.vonage.com/blog/2021/03/15/the-ultimate-list-of-fun-apis-for-your-next-coding-project/)
 - [Fun API List](https://apilist.fun/)
@@ -182,7 +178,6 @@ Here are some E-books and a list of 'old fashioned' physical books to read.
 
 <br>
 
-
 ## Database Resources
 
 ### SQl - Sequel Query Language
@@ -196,7 +191,7 @@ Here are some E-books and a list of 'old fashioned' physical books to read.
 
 ### **SQL Database**
 
-What exactly is a database? This quick tutorial will explain how Relational Database Management Systems work. You'll learn a brief history of databases. And even how to write some of your own SQL queries. (20 minute read): https://www.freecodecamp.org/news/dbms-and-sql-basics/
+What exactly is a database? This quick tutorial will explain how Relational Database Management Systems work. You'll learn a brief history of databases. And even how to write some of your own SQL queries. (20 minute read): <https://www.freecodecamp.org/news/dbms-and-sql-basics/>
 
 - [PostgreSQL relational-DB](AddendumOfResources/Relational-DB-Postgres/Relational-DB-Postgres.md)
 
@@ -224,18 +219,18 @@ What exactly is a database? This quick tutorial will explain how Relational Data
 ## Public datasets
 
 Here are a few resources to find datasets:
-- https://community.tableau.com/s/question/0D54T00000G557ESAR/data-sets
-- https://www.kaggle.com/datasets
-- http://statweb.stanford.edu/~sabatti/data.html
-- https://opendatainception.io/
-- https://www.stats.govt.nz/large-datasets/csv-files-for-download/
+
+- <https://community.tableau.com/s/question/0D54T00000G557ESAR/data-sets>
+- <https://www.kaggle.com/datasets>
+- <http://statweb.stanford.edu/~sabatti/data.html>
+- <https://opendatainception.io/>
+- <https://www.stats.govt.nz/large-datasets/csv-files-for-download/>
 
 <br>
 
 ---
 
 <br>
-
 
 ## Git and GitHub Resources
 
@@ -274,23 +269,23 @@ CodePen.io is a social development environment for front-end designers and devel
 
 Here are resources about how to best use Jupyter Notebooks
 
-- The Jupyter Notebooks Project -- 	https://jupyter.org
+- The Jupyter Notebooks Project --  <https://jupyter.org>
 
-- Jupyter Notebook Quick Start Guide -- https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html
+- Jupyter Notebook Quick Start Guide -- <https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/index.html>
 
-- How to Use Jupyter Notebook: A Beginner’s Tutorial –- https://www.dataquest.io/blog/jupyter-notebook-tutorial
+- How to Use Jupyter Notebook: A Beginner’s Tutorial –- <https://www.dataquest.io/blog/jupyter-notebook-tutorial>
 
-- Excellent Article on beautifying Jupyter Notebooks -- https://towardsdatascience.com/enrich-your-jupyter-notebook-with-these-tips-55c8ead25255
+- Excellent Article on beautifying Jupyter Notebooks -- <https://towardsdatascience.com/enrich-your-jupyter-notebook-with-these-tips-55c8ead25255>
 
-- How to optimize your Jupyter Notebook (article) -- https://www.freecodecamp.org/news/optimize-your-jupyter-notebook/
+- How to optimize your Jupyter Notebook (article) -- <https://www.freecodecamp.org/news/optimize-your-jupyter-notebook/>
 
-- Complete Intro to Jupyter Series (video) -- https://www.freecodecamp.org/news/complete-intro-to-jupyter-series-video/
+- Complete Intro to Jupyter Series (video) -- <https://www.freecodecamp.org/news/complete-intro-to-jupyter-series-video/>
 
 <br>
 
 ---
 
-<br> 
+<br>
 
 ## Markdown Crash Course
 
@@ -334,12 +329,13 @@ Create a profile for yourself and select your areas of interest
 ## Python Resources
 
 <<<<<<< HEAD
+
 - [How to add Python to Windows PATH](https://datatofish.com/add-python-to-windows-path/)
 =======
 Best resources for learning Python for beginners
 
 - [Learn Python - Full Course for Beginners  (freeCodeCamp)](https://www.youtube.com/watch?v=rfscVS0vtbw)
-    In this freeCodeCamp YouTube Course, you will learn programming basics such as lists, conditionals, strings, tuples, functions, classes and more. 
+    In this freeCodeCamp YouTube Course, you will learn programming basics such as lists, conditionals, strings, tuples, functions, classes and more.
 - [The Python Handbook (Flavio Copes)](https://www.freecodecamp.org/news/the-python-handbook/)
     In this Flavio Copes article, you will learn about strings, lists, tuples, recursion, and more.
 - [Python Tutorials for Absolute Beginners  (CS Dojo)](https://www.youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)
@@ -370,6 +366,7 @@ Best resources for learning Python for beginners
     In this Programming with Mosh YouTube course,  you will learn programming basics like variables, loops, strings, tuples, functions, classes and more. [For additional practice, you can go through Mosh's 53 Python Exercises for Beginners.](https://programmingwithmosh.com/python/python-exercises-and-questions-for-beginners/)
 - [Scientific Computing with Python (freeCodeCamp)](https://www.freecodecamp.org/learn/scientific-computing-with-python/)
     In this freeCodeCamp certification course, you will learn about loops, lists, dictionaries, networking, web services and more. You will also have the opportunity to build five projects: Arithmetic Formatter, Time Calculator, Budget App, Polygon Area Calculator, and Probability Calculator.
+
 >>>>>>> main
 
 <br>
